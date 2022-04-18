@@ -1,0 +1,15 @@
+{
+  "name": "fem-sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.4.1",
+    "parcel": "^2.4.1"
+  }
+}
