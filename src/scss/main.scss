@@ -1,9 +1,8 @@
-@import 'base/_reset.scss';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';

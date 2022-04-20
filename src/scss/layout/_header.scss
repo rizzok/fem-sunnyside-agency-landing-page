@@ -1,0 +1,11 @@
+header {
+  height: 50%;
+  background-image: url('/src/images/mobile/image-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* 
+  @include div-same-size-as-background-img(
+    '/src/images/mobile/image-header.jpg'
+  );
+*/
+}
