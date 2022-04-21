@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 18px) * 1rem;
+}
+/* 
+FUNCTION pxToRem IMPROVEMENTS: 
+Wonder if would be possible to make the 16 in $remValue: ($value / 16) + rem; dynamic, say some var --baseline defined at :root? The scenario is 16 can change based on @media query of CSS.
+source: https://dev.to/itpretty/comment/1j269
+ */

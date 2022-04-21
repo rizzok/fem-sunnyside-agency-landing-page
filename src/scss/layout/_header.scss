@@ -1,11 +1,40 @@
+@use 'sass:math';
+
 header {
-  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+
+  aspect-ratio: 750 / 1076;
   background-image: url('/src/images/mobile/image-header.jpg');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  /* 
-  @include div-same-size-as-background-img(
-    '/src/images/mobile/image-header.jpg'
-  );
-*/
+
+  .navbar {
+    padding: 2rem 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    #logo {
+      height: pxToRem(27px);
+    }
+
+    #menu-mobile {
+      height: pxToRem(20px);
+    }
+  }
+
+  h1 {
+    padding: 4rem 0 2.7rem;
+    text-transform: uppercase;
+    color: $white;
+    font-size: pxToRem(45px);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.4rem;
+  }
 }
