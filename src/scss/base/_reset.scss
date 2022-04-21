@@ -1,3 +1,4 @@
+/* minireset.css begin */
 html,
 body,
 p,
@@ -65,9 +66,27 @@ td,
 th {
   padding: 0;
 }
+/* minireset.css end */
 
 html,
 body {
   height: 100%;
   width: 100%;
+}
+
+body {
+  min-width: 375px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: pxToRem(18px);
 }

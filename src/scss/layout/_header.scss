@@ -12,6 +12,10 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
 
+  @media (min-width: $breakpoint-mobile) {
+    background-image: url('/src/images/desktop/image-header.jpg');
+  }
+
   .navbar {
     padding: 2rem 1.5rem;
     width: 100%;
@@ -19,22 +23,65 @@ header {
     justify-content: space-between;
 
     #logo {
-      height: pxToRem(27px);
+      height: pxToRem(24px);
+
+      @media (min-width: $breakpoint-mobile) {
+        height: pxToRem(30px);
+      }
     }
 
     #menu-mobile {
-      height: pxToRem(20px);
+      height: pxToRem(18px);
+
+      @media (min-width: $breakpoint-mobile) {
+        display: none;
+      }
+    }
+
+    #menu-desktop {
+      display: none;
+
+      @media (min-width: $breakpoint-mobile) {
+        display: block;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          a {
+            font-size: pxToRem(18px);
+            color: $white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+
+            &.active {
+              color: $very-dark-desaturated-blue;
+              background-color: $white;
+              border-radius: 40px;
+              font-family: 'Fraunces', serif;
+              font-weight: 900;
+              text-transform: uppercase;
+              font-size: pxToRem(15px);
+            }
+          }
+        }
+      }
     }
   }
 
   h1 {
-    padding: 4rem 0 2.7rem;
+    padding: 4rem 2rem 2.7rem;
     text-transform: uppercase;
     color: $white;
-    font-size: pxToRem(45px);
+    font-size: pxToRem(40px);
     font-family: 'Fraunces', serif;
     font-weight: 900;
     text-align: center;
     letter-spacing: 0.4rem;
+
+    @media (min-width: $breakpoint-mobile) {
+      font-size: pxToRem(55px);
+    }
   }
 }
