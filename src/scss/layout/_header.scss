@@ -51,6 +51,7 @@ header {
 
       ul {
         display: flex;
+        align-items: baseline;
 
         li {
           a {
@@ -59,6 +60,11 @@ header {
             opacity: 0.9;
             text-decoration: none;
             padding: 1rem 1.5rem;
+            transition: color 0.3s;
+
+            &:hover {
+              color: $very-dark-desaturated-blue;
+            }
           }
         }
 
@@ -73,8 +79,15 @@ header {
             font-weight: 900;
             text-transform: uppercase;
             font-size: pxToRem(15px);
-            padding: 1rem 2rem;
+            padding: 1.2rem 2rem;
             opacity: 1;
+            box-shadow: 0px 0px 5px 0px #00000008;
+            transition: background-color 0.2s, color 0.2s;
+
+            &:hover {
+              background-color: rgba($white, 0.25);
+              color: $white;
+            }
           }
         }
       }
@@ -92,7 +105,9 @@ header {
     letter-spacing: 0.4rem;
 
     @media (min-width: $breakpoint-mobile) {
+      padding: 5.5rem 2rem;
       font-size: pxToRem(55px);
+      letter-spacing: 0.6rem;
     }
   }
 }
