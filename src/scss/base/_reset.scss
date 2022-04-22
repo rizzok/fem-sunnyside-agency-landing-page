@@ -90,3 +90,13 @@ a {
   font-weight: 600;
   font-size: pxToRem(18px);
 }
+
+a {
+  color: $very-dark-desaturated-blue;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $soft-red;
+  }
+}

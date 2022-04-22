@@ -17,18 +17,38 @@
     <header>
       <div class="navbar">
         <img id="logo" src="images/logo.svg" alt="logo sunnyside" />
-        <img
-          id="menu-mobile"
-          src="images/icon-hamburger.svg"
-          alt="menu mobile"
-        />
+
+        <div id="menu-mobile-container">
+          <input
+            id="menu-mobile-checkbox"
+            type="checkbox"
+            name="menu-mobile-checkbox"
+          />
+          <img
+            id="btn-menu-mobile"
+            src="images/icon-hamburger.svg"
+            alt="button menu mobile"
+          />
+          <div id="menu-mobile">
+            <div id="comic-bubble"></div>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li class="btn-contact-container">
+                <a href="#" class="btn btn-contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <nav id="menu-desktop">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
             <li class="btn-contact-container">
-              <a href="#" class="btn-contact">Contact</a>
+              <a href="#" class="btn btn-contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -38,7 +58,6 @@
     </header>
 
     <!--
-
     Transform your brand
   
     We are a full-service creative agency specializing in helping brands grow fast. 
