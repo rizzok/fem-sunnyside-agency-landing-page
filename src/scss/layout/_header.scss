@@ -13,6 +13,7 @@ header {
   background-repeat: no-repeat;
 
   @media (min-width: $breakpoint-mobile) {
+    aspect-ratio: 9 / 5;
     background-image: url('/src/images/desktop/image-header.jpg');
   }
 
