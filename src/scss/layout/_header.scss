@@ -7,12 +7,12 @@ header {
   align-items: center;
   width: 100%;
 
-  aspect-ratio: 750 / 1076;
+  aspect-ratio: 375 / 538;
   background-image: url('/src/images/mobile/image-header.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 
-  @media (min-width: $breakpoint-mobile) {
+  @include breakpoint(desktop-only) {
     aspect-ratio: 9 / 5;
     background-image: url('/src/images/desktop/image-header.jpg');
   }
@@ -23,14 +23,14 @@ header {
     display: flex;
     justify-content: space-between;
 
-    @media (min-width: $breakpoint-mobile) {
+    @include breakpoint(desktop-only) {
       padding: 2.5rem 2rem;
     }
 
     #logo {
       height: pxToRem(24px);
 
-      @media (min-width: $breakpoint-mobile) {
+      @include breakpoint(desktop-only) {
         height: pxToRem(32px);
       }
     }
@@ -40,7 +40,7 @@ header {
         height: pxToRem(18px);
         opacity: 1;
 
-        @media (min-width: $breakpoint-mobile) {
+        @include breakpoint(desktop-only) {
           display: none;
         }
       }
@@ -72,7 +72,7 @@ header {
         justify-content: center;
         padding: 1.6rem;
 
-        @media (min-width: $breakpoint-mobile) {
+        @include breakpoint(desktop-only) {
           display: none !important;
         }
 
@@ -115,7 +115,7 @@ header {
     #menu-desktop {
       display: none;
 
-      @media (min-width: $breakpoint-mobile) {
+      @include breakpoint(desktop-only) {
         display: block;
       }
 
@@ -163,7 +163,7 @@ header {
     text-align: center;
     letter-spacing: 0.4rem;
 
-    @media (min-width: $breakpoint-mobile) {
+    @include breakpoint(desktop-only) {
       padding: 5.5rem 2rem;
       font-size: pxToRem(55px);
       letter-spacing: 0.6rem;
