@@ -64,20 +64,24 @@
     }
   }
 
+  :nth-child(4) .link-container a::before {
+    background-color: #ffdad0;
+  }
+
   @include breakpoint(desktop-only) {
     > * {
       width: 50%;
     }
 
     > :first-child {
-      content: url(../images/desktop/image-transform.jpg);
+      content: url('/src/images/desktop/image-transform.jpg');
       order: 2;
     }
     > :nth-child(2) {
       order: 1;
     }
     > :nth-child(3) {
-      content: url(../images/desktop/image-stand-out.jpg);
+      content: url('/src/images/desktop/image-stand-out.jpg');
       order: 3;
     }
     > :last-child {

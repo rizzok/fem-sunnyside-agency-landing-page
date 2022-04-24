@@ -1,0 +1,46 @@
+#section-2 {
+  > * {
+    display: flex;
+    text-align: center;
+    aspect-ratio: 5 / 8;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .text-container {
+    margin-top: auto;
+    padding: 3rem 1rem;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: pxToRem(28px);
+    opacity: 0.6;
+
+    @include breakpoint(desktop-only) {
+      font-size: pxToRem(42px);
+    }
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: pxToRem(16px);
+    opacity: 0.6;
+
+    @include breakpoint(desktop-only) {
+      margin: 1.8rem 0;
+      line-height: 1.5;
+      font-size: pxToRem(19px);
+    }
+  }
+
+  #graphic-design {
+    background-image: url('/src/images/mobile/image-graphic-design.jpg');
+  }
+
+  #photography {
+    background-image: url('/src/images/mobile/image-photography.jpg');
+  }
+}
