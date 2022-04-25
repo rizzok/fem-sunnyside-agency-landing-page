@@ -1,0 +1,80 @@
+#section-3 {
+  padding: 4rem 1.5rem;
+
+  @include breakpoint(desktop-only) {
+    padding: 10rem;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: $grayish-blue;
+    font-family: 'Fraunces', serif;
+    font-size: pxToRem(16px);
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    text-align: center;
+
+    @include breakpoint(desktop-only) {
+      font-size: pxToRem(20px);
+    }
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(desktop-only) {
+      flex-direction: row;
+    }
+  }
+
+  .testimonial-container {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint(desktop-only) {
+      padding-top: 4.5rem;
+    }
+
+    img {
+      width: 4.5rem;
+      border-radius: 40px;
+    }
+
+    p.testimonial {
+      margin: 2rem 0;
+      color: $very-dark-grayish-blue;
+      text-align: center;
+      line-height: pxToRem(30px);
+
+      @include breakpoint(desktop-only) {
+        margin-top: 3.5rem;
+        margin-bottom: 4rem;
+        padding: 0 1rem;
+        font-size: pxToRem(18px);
+      }
+    }
+
+    p.author {
+      font-family: 'Fraunces', serif;
+      font-size: pxToRem(18px);
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+
+      @include breakpoint(desktop-only) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    p.job {
+      color: $grayish-blue;
+      font-size: pxToRem(14px);
+
+      @include breakpoint(desktop-only) {
+        font-size: pxToRem(14px);
+      }
+    }
+  }
+}
