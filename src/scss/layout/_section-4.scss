@@ -1,0 +1,29 @@
+#section-4 {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include breakpoint(desktop-only) {
+    flex-wrap: nowrap;
+  }
+
+  img {
+    width: 50%;
+
+    @include breakpoint(desktop-only) {
+      width: 25%;
+    }
+  }
+
+  :first-child {
+    content: url('/src/images/desktop/image-gallery-milkbottles.jpg');
+  }
+  :nth-child(2) {
+    content: url('/src/images/desktop/image-gallery-orange.jpg');
+  }
+  :nth-child(3) {
+    content: url('/src/images/desktop/image-gallery-cone.jpg');
+  }
+  :last-child {
+    content: url('/src/images/desktop/image-gallery-sugarcubes.jpg');
+  }
+}
