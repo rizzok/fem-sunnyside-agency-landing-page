@@ -21,6 +21,7 @@
       font-family: 'Fraunces', serif;
       font-weight: 900;
       font-size: pxToRem(32px);
+      color: $very-dark-desaturated-blue;
 
       @include breakpoint(desktop-only) {
         font-size: pxToRem(42px);
@@ -48,24 +49,35 @@
         font-weight: 900;
         font-size: pxToRem(16px);
         position: relative;
+        color: $very-dark-desaturated-blue;
 
         &::before {
           content: '';
           position: absolute;
           left: 0.15rem;
-          bottom: 0.4rem;
-          height: 8px;
+          bottom: 0.35rem;
+          height: 10px;
           width: 8rem;
-          background-color: #fef2b5;
+          background-color: #fed000;
           border-radius: 10px;
           z-index: -1;
+          opacity: 0.2;
+          transition: opacity 0.3s;
+        }
+
+        &:hover {
+          color: $very-dark-desaturated-blue;
+
+          &::before {
+            opacity: 1;
+          }
         }
       }
     }
   }
 
   :nth-child(4) .link-container a::before {
-    background-color: #ffdad0;
+    background-color: #ff7463;
   }
 
   @include breakpoint(desktop-only) {
