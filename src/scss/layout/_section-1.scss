@@ -24,7 +24,7 @@
       color: $very-dark-desaturated-blue;
 
       @include breakpoint(desktop-only) {
-        font-size: pxToRem(42px);
+        font-size: pxToRem(40px);
       }
     }
 
@@ -35,9 +35,9 @@
       font-size: pxToRem(18px);
 
       @include breakpoint(desktop-only) {
-        margin: 1.8rem 0;
-        line-height: 1.5;
-        font-size: pxToRem(19px);
+        margin: 2rem 0 2.5rem;
+        line-height: 1.6;
+        font-size: pxToRem(18px);
       }
     }
 
@@ -91,6 +91,7 @@
     }
     > :nth-child(2) {
       order: 1;
+      padding-left: 9rem;
     }
     > :nth-child(3) {
       content: url('/src/images/desktop/image-stand-out.jpg');
@@ -98,6 +99,7 @@
     }
     > :last-child {
       order: 4;
+      padding-right: 9rem;
     }
   }
 }

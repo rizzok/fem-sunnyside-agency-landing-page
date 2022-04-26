@@ -16,6 +16,7 @@
 
     @include breakpoint(desktop-only) {
       font-size: pxToRem(20px);
+      letter-spacing: 0.3rem;
     }
   }
 

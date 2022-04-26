@@ -8,11 +8,19 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 3rem 0;
+    padding: 4.5rem 3rem 0;
     width: 375px;
+
+    @include breakpoint(desktop-only) {
+      width: 390px;
+    }
 
     #logo-footer {
       width: 10rem;
+
+      @include breakpoint(desktop-only) {
+        width: 10.5rem;
+      }
     }
 
     ul {
@@ -21,6 +29,10 @@ footer {
       padding-bottom: 5rem;
       display: flex;
       justify-content: space-between;
+
+      @include breakpoint(desktop-only) {
+        padding-top: 2.5rem;
+      }
 
       li a {
         color: $dark-moderate-cyan;
@@ -35,7 +47,7 @@ footer {
       width: 100%;
       padding: 0 2.5rem 4rem;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
 
       a svg {
         fill: #2c7566;

@@ -1,5 +1,3 @@
-@use 'sass:math';
-
 header {
   display: flex;
   flex-direction: column;
@@ -24,14 +22,15 @@ header {
     justify-content: space-between;
 
     @include breakpoint(desktop-only) {
-      padding: 2.5rem 2rem;
+      padding: 3rem 2.5rem;
+      align-items: center;
     }
 
     #logo {
-      height: pxToRem(24px);
+      width: pxToRem(124px);
 
       @include breakpoint(desktop-only) {
-        height: pxToRem(32px);
+        width: pxToRem(170px);
       }
     }
 
@@ -143,6 +142,10 @@ header {
             background-color: $white;
             color: $very-dark-desaturated-blue;
 
+            @include breakpoint(desktop-only) {
+              padding: 1.2rem 2rem;
+            }
+
             &:hover {
               background-color: rgba($white, 0.25);
               color: $white;
@@ -164,7 +167,7 @@ header {
     letter-spacing: 0.4rem;
 
     @include breakpoint(desktop-only) {
-      padding: 5.5rem 2rem;
+      padding: 4rem 2rem 6rem;
       font-size: pxToRem(55px);
       letter-spacing: 0.6rem;
     }
