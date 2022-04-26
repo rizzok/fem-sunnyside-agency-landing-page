@@ -8,23 +8,24 @@
 
   img {
     width: 50%;
-    // todo: images carrées
 
     @include breakpoint(desktop-only) {
       width: 25%;
     }
   }
 
-  :first-child {
-    content: url('/src/images/desktop/image-gallery-milkbottles.jpg');
-  }
-  :nth-child(2) {
-    content: url('/src/images/desktop/image-gallery-orange.jpg');
-  }
-  :nth-child(3) {
-    content: url('/src/images/desktop/image-gallery-cone.jpg');
-  }
-  :last-child {
-    content: url('/src/images/desktop/image-gallery-sugarcubes.jpg');
+  @include breakpoint(desktop-only) {
+    :first-child {
+      content: url('/src/images/desktop/image-gallery-milkbottles.jpg');
+    }
+    :nth-child(2) {
+      content: url('/src/images/desktop/image-gallery-orange.jpg');
+    }
+    :nth-child(3) {
+      content: url('/src/images/desktop/image-gallery-cone.jpg');
+    }
+    :last-child {
+      content: url('/src/images/desktop/image-gallery-sugarcubes.jpg');
+    }
   }
 }
