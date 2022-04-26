@@ -8,6 +8,7 @@
 
   img {
     width: 50%;
+    // todo: images carrées
 
     @include breakpoint(desktop-only) {
       width: 25%;

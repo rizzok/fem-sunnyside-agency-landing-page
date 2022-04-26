@@ -1,8 +1,46 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
+footer {
+  background-color: $moderate-cyan;
+  color: $dark-desaturated-cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 3rem 0;
+  // width: 100%;
+  // position: absolute;
 
-  & a {
-    color: hsl(228, 45%, 44%);
+  #logo-footer {
+    width: 10rem;
+  }
+
+  ul {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+
+    li a {
+      color: $dark-moderate-cyan;
+    }
+  }
+
+  #social-media {
+    width: 100%;
+    padding: 0 2.5rem 4rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .attribution {
+    position: relative;
+    bottom: 1rem;
+    font-size: pxToRem(11px);
+    text-align: center;
+
+    a {
+      font-size: pxToRem(12px);
+      color: hsl(228, 45%, 44%);
+      text-decoration: underline;
+    }
   }
 }
